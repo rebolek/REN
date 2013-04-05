@@ -1,4 +1,4 @@
-# 人 - REN - Readable Exchange Notation
+# 人 - REN - REadable Notation
 
 ## Introduction
 
@@ -40,6 +40,10 @@ See? It's simple.
 ###Why?
 
 It's much easier to eyes than XML and JSON but at the same time it's at least as powerful. Broader datatype support is also great property of REN. 
+
+###Why REN?
+
+REN stands for REadable Notation because that's what it is. Coincidentally **REN** also means *human* in Chinese and the glyph for REN is 人 (Unicode character `^(4EBA)`), so this is REN's logo. Because let's keep it simple.
 
 ##Syntax
 
