@@ -1,4 +1,4 @@
-# 人 - REN - Readable Exchange Notation
+# 人 - REN - REadable Notation
 
 ## Introduction
 
