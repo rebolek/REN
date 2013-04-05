@@ -1,4 +1,4 @@
-# RENO - REbol NOtation
+# RENO - REadable NOtation
 
 ## Introduction
 
@@ -20,7 +20,7 @@ RENO is simple yet powerful data exchange language. It's very human friendly and
     word
     3.14
     [a b c d]
-    info: [time is 2:45 and date is 5-4-2013]
+    info: [time is 2:45 and date is 2013-4-5]
     person: object! [
         name: "Jaro"
         age: 1
@@ -100,25 +100,27 @@ Floating point number
 
 ###Email
 
-Standard email (see RFC)
+Standard email - see [RFC5322](http://tools.ietf.org/html/rfc5322#section-3.4.1)
 
     test@example.com
 
 
-###URL
+###URI
 
-Standard URL (see RFC)
+Standard URI - see [RFC3986](http://tools.ietf.org/html/rfc3986)
     
     http://www.example.com
 
 
 ###Date and time
 
-Should it support RFC??? also?
+Date and time as defined in [RFC3339](http://www.ietf.org/rfc/rfc3339.txt)
+You can use slash instead of T, so it's more human readable.
 
     12:45
-	14-3-2013
-	1-1-2000/13:20
+    14-3-2013
+    1-1-2000/13:20
+    1937-01-01T12:00:27.87+00:20
 
 ###Block
 
