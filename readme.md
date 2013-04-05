@@ -1,11 +1,11 @@
-# RENO - REadable NOtation
+# 人 - REN - Readable Exchange Notation
 
 ## Introduction
 
-RENO is simple yet powerful data exchange language. It's very human friendly and pleasant to read. See for yourself.
+REN is simple yet powerful data exchange format. It's very human friendly and pleasant to read. See for yourself.
 
     RENO[
-        Title: "RENO Example"
+        Title: "REN Example"
         Type: example
         Date: 5-4-2013
         Version: 0.0.1
@@ -39,7 +39,7 @@ See? It's simple.
 
 ###Why?
 
-It's much easier to eyes than XML and JSON but at the same time it's at least as powerful. Broader datatype support is also great property of RENO. 
+It's much easier to eyes than XML and JSON but at the same time it's at least as powerful. Broader datatype support is also great property of REN. 
 
 ##Syntax
 
@@ -228,6 +228,6 @@ Map is similiar to object but can have strings as keys.
 
 ###Header
 
-Header is optional but you are encouraged to use it. Unless you know what you are sending and where, you should add header as it enhances readability. Header can contain name, type, version, date, checksum and other useful informations about following data. Parse can for example just read header and decide if it makes sense to read rest of data (they may require higher version, data are expired etc.). Format of header is RENO followed by block of key/value pairs. Header can be empty also.
+Header is optional but you are encouraged to use it. Unless you know what you are sending and where, you should add header as it enhances readability. Header can contain name, type, version, date, checksum and other useful informations about following data. Parse can for example just read header and decide if it makes sense to read rest of data (they may require higher version, data are expired etc.). Format of header is REN followed by block of key/value pairs. Header can be empty also.
 
 
