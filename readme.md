@@ -1,4 +1,4 @@
-# 人 - REN - REadable Notation
+﻿# [人] - REN - REadable Notation
 
 ## Introduction
 
@@ -11,7 +11,7 @@ There are strings:
 
 And there are words:
 	
-	hello world
+	hello world   ; hello world
 
 Numbers are also supported in integer and floating point form.
 
@@ -20,6 +20,10 @@ Numbers are also supported in integer and floating point form.
 	3.14
 	-2.354e3
 
+Another type will tell you where to get help:
+
+    http://server.com/readme
+	
 You get the idea.
 
 The basic form of data collection in REN is block. 
@@ -191,6 +195,13 @@ Word cannot start with number. Words are used to construct domain specific langu
 
     word after word
 
+Some syntax is reserved for future but not currently implemeted:
+	
+	'world        ; key reference with "'"
+	hello :world  ; hello and get 'world key value
+	hello: world  ; set hello to 'world
+    hello: :world ; set hello to 'world key value
+	
 ###Key (set-word)
 
 Key (also set-word) is used to indicate that word should get following value. Format of set-word is word followed by colon.
