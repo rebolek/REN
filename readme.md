@@ -4,7 +4,7 @@
 
 REN is simple yet powerful data description and exchange format. It's very human friendly and nice to read. Look at the beauty:
 
-    RENO[
+    REN[
         Title: "REN Example"
         Type: example
         Date: 5-4-2013
