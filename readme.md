@@ -1,4 +1,4 @@
-# RENO - Readable Exchange NOtation
+# RENO - REbol NOtation
 
 ## Introduction
 
@@ -114,11 +114,23 @@ Standard URL (see RFC)
 
 ###Date and time
 
+Should it support RFC??? also?
+
+    12:45
+	14-3-2013
+	1-1-2000/13:20
+
 ###Block
+
+    [ "this" is: block ]
 
 ###Object
 
+Object is collection of set-words (keys) and values kept together in block and prefixed with object! word.
+
 ###Map
+
+Map is similiar to object but can have strings as keys. 
 
 ##Structure
 
