@@ -1,14 +1,38 @@
-# [人] REN - REadable Notation
+# 人 - REN - Readable Exchange Notation
 
 ## Introduction
 
-REN is simple yet powerful data description and exchange format. It's very human friendly and nice to read. Look at the beauty:
+**REN** is simple yet powerful data exchange format. It's very human friendly and pleasant to read. 
+Every value in **REN** has it's own type to allow easier describtion of your data. See for yourself.
 
+There are strings:
+
+    "hello world"
+
+And there are words:
+	
+	hello world
+
+Numbers are also supported in integer and floating point form.
+
+    1
+	-1
+	3.14
+	-2.354e3
+
+You get the idea.
+
+The basic form of data collection in REN is block. 
+	
+    [1 "a" e@ma.il and so://on]	
+	
+You can also add header to data transmission to inform the loader about type of data.
+	
     REN[
         Title: "REN Example"
         Type: example
         Date: 5-4-2013
-        Expires: never
+		Expires: never
         Version: 0.0.1
         Author: "Boleslav Brezovsky"
     ]
@@ -21,10 +45,7 @@ REN is simple yet powerful data description and exchange format. It's very human
     word
     3.14
     [a b c d]
-    info: [
-        "REN" project created
-        time is 2:45 and date is 2013-4-5
-    ]
+    info: [time is 2:45 and date is 2013-4-5]
     person: object! [
         name: "Jaro"
         age: 1
@@ -43,12 +64,7 @@ See? It's simple.
 
 ###Why?
 
-It's much easier to eyes than XML and JSON but at the same time it's at least as powerful. Broader datatype support is also great property of REN.
- 
-
-###Why REN?
-
-**REN** stands for REadable Notation because that's what it is. Coincidentally **REN** also means *human* in Chinese and the glyph for REN is 人 (Unicode character `^(4EBA)`), so this is REN's logo. Because let's keep it simple.
+It's much easier to eyes than XML and JSON and at the same time it's at least as powerful. Broader datatype support is also great property of REN. 
 
 ##Syntax
 
@@ -65,26 +81,6 @@ is same as
 
     a: [1 "b" c@d.e]
 
-####Why not comma?
-
-The question is, why comma? 
-
-Space is easier to hit on keyboard than comma and visually more pleasant. 
-
-Also, whitespaces allow construction of DSL/dialects directly from blocks and use advantage of datatypes.
-
-    send anon@example.com "Hello"
-
-Launguages with only basic datatypes support would interpret all values as string:
-
-    {"send","anon@example.com","Hello"}
-
-but it can also be interpreted as Remote Procedure Call (RPC):
-
-    send("anon@example.com","Hello");
-
-As you see, it's really flexible format. 
-
 ###Comment  
 
 Comments start with `;`
@@ -93,7 +89,7 @@ Comments start with `;`
 
 ###String
 
-There are two types of string. Single line and multi line. Single line string tarts and ends with quotes. Multiline string starts with `{` and ends with `}`. String is UTF-8 encoded. Special characters are escaped with `^` (see table below).
+There are two types of string. Single line and multi line. Single line string tarts and ends with quotes. Multiline string starts with `{` and ends with `}`. String is UTF-8 encoded. Special characters are escaped with `^` (see table below)
 
     "single line"
 
@@ -108,19 +104,19 @@ There are two types of string. Single line and multi line. Single line string ta
 <td>
 ^"
 </td><td>
-Inserts a double quote <b>"</b>.
+Inserts a double quote (").
 </td>
 <tr>
 <td>
 ^}
 </td><td>
-Inserts a closing brace <b>}</b>.
+Inserts a closing brace (}).
 </td>
 <tr>
 <td>
 ^^
 </td><td>
-Inserts a  caret <b>^</b>.
+Inserts a  caret (^).
 </td>
 <tr>
 <td>
