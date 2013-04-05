@@ -106,79 +106,79 @@ There are two types of string. Single line and multi line. Single line string ta
 <th>Definition</th>
 <tr>
 <td>
-`^"`
+^"
 </td><td>
-Inserts a double quote `"`.
+Inserts a double quote <b>"</b>.
 </td>
 <tr>
 <td>
-`^}`
+^}
 </td><td>
-Inserts a closing brace `}`.
+Inserts a closing brace <b>}</b>.
 </td>
 <tr>
 <td>
-`^^`
+^^
 </td><td>
-Inserts a  caret `^`.
+Inserts a  caret <b>^</b>.
 </td>
 <tr>
 <td>
-`^/`
-</td><td>
-Starts a new line.
-</td>
-<tr>
-<td>
-`^(line)`
+^/
 </td><td>
 Starts a new line.
 </td>
 <tr>
 <td>
-`^-`
+^(line)
+</td><td>
+Starts a new line.
+</td>
+<tr>
+<td>
+^-
 </td><td>
 Inserts a tab.
 </td>
 <tr>
 <td>
-`^(tab)`
+^(tab)
 </td><td>
 Inserts a tab.
 </td>
 <tr>
 <td>
-`^(page)`
+^(page)
 </td><td>
 Starts a new page.
 </td>
 <tr>
 <td>
-`^(back)`
+^(back)
 </td><td>
 Erases one character to the left of the insertion point.
 </td>
 <tr>
 <td>
-`^(null)`
+^(null)
 </td><td>
 Inserts a null character.
 </td>
 <tr>
 <td>
-`^(escape)`
+^(escape)
 </td><td>
 Inserts an escape character.
 </td>
 <tr>
 <td>
-`^(letter)`
+^(letter)
 </td><td valign="top" bgcolor="white">
 Inserts control-letter (A-Z).
 </td>
 <tr>
 <td>
-`^(xxxx)`
+^(xxxx)
 </td><td>
 Inserts an Unicode character by hexidecimal (xxxx) number.
 </td></tr></table>
