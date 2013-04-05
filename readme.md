@@ -37,6 +37,10 @@ RENO is simple yet powerful data exchange language. It's very human friendly and
 
 See? It's simple.
 
+###Why?
+
+It's much easier to eyes than XML and JSON but at the same time it's at least as powerful. Broader datatype support is also great property of RENO. 
+
 ##Syntax
 
 ###Whitespaces
@@ -54,25 +58,111 @@ is same as
 
 ###Comment  
 
-Comments start with ;
+Comments start with `;`
 
     ; this is comment
 
 ###String
 
-There are two types of string. Single line and multi line. Single line string tarts and ends with quotes. Multiline string starts with `{` and ends with `}`. String is UTF-8 encoded. Special characters are escaped with ^ (see table below)
+There are two types of string. Single line and multi line. Single line string tarts and ends with quotes. Multiline string starts with `{` and ends with `}`. String is UTF-8 encoded. Special characters are escaped with `^` (see table below)
 
     "single line"
 
     {multi
     line}
 
-...table with escapes
+
+<table>
+<tr><th>Character</th>
+<th>Definition</th>
+<tr>
+<td>
+^"
+</td><td>
+Inserts a double quote (").
+</td>
+<tr>
+<td>
+^}
+</td><td>
+Inserts a closing brace (}).
+</td>
+<tr>
+<td>
+^^
+</td><td>
+Inserts a  caret (^).
+</td>
+<tr>
+<td>
+^/
+</td><td>
+Starts a new line.
+</td>
+<tr>
+<td>
+^(line)
+</td><td>
+Starts a new line.
+</td>
+<tr>
+<td>
+^-
+</td><td>
+Inserts a tab.
+</td>
+<tr>
+<td>
+^(tab)
+</td><td>
+Inserts a tab.
+</td>
+<tr>
+<td>
+^(page)
+</td><td>
+Starts a new page.
+</td>
+<tr>
+<td>
+^(back)
+</td><td>
+Erases one character to the left of the insertion point.
+</td>
+<tr>
+<td>
+^(null)
+</td><td>
+Inserts a null character.
+</td>
+<tr>
+<td>
+^(escape)
+</td><td>
+Inserts an escape character.
+</td>
+<tr>
+<td>
+^(letter)
+</td><td valign="top" bgcolor="white">
+Inserts control-letter (A-Z).
+</td>
+<tr>
+<td>
+^(xxxx)
+</td><td>
+Inserts an Unicode character by hexidecimal (xxxx) number.
+</td></tr></table>
+
 
 
 ###Word
 
-Word contains alphanumerical characters, numbers and ( ??? ). Word cannot start with number. Words are used to construct domain specific languages (DSL) or dialects. More on DSL/dialects later.
+Word contains alphanumerical characters, numbers and any of following characters:
+
+    ? ! . ' + - * & | = _
+
+Word cannot start with number. Words are used to construct domain specific languages (DSL) or dialects. More on DSL/dialects later.
 
     word after word
 
